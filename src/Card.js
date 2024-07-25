@@ -5,7 +5,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 function Card(props){
     return(
       <div className='card'>
-        <img className='card-img' src ={`${props.imageUrl}`} alt ={`a photo of ${props.title}`}></img>
+        <img className='card-img' src ={`${props.imageUrl}`} alt ={`${props.title}`}></img>
         <div className='card-content'>
           <p className='card-content-location'><FontAwesomeIcon icon={faLocationDot} className="card-location-icon" />{props.location.toUpperCase()} <a href={`${props.googleMapsUrl}`} >View on Google Maps</a></p>
           <h1 className='card-content-title'>{props.title}</h1>
